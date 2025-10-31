@@ -15,7 +15,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.7;
             color: #2c3e50;
-            background: 
+            background:
                 radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
                 radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
                 radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%),
@@ -25,7 +25,6 @@
             position: relative;
             overflow-x: hidden;
         }
-
 
         .container {
             max-width: 900px;
@@ -47,7 +46,6 @@
             position: relative;
             overflow: hidden;
         }
-
 
         .header h1 {
             font-size: 2.8em;
@@ -224,58 +222,49 @@
             color: #bdc3c7;
         }
 
-        .space-icon {
-            font-size: 1.2em;
-            margin-right: 8px;
+        .important-notice {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 25px 0;
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+        }
+
+        .important-notice h3 {
+            color: white;
+            margin-top: 0;
         }
 
         @media (max-width: 768px) {
             body {
                 padding: 10px;
             }
-            
+
             .container {
                 border-radius: 15px;
             }
-            
+
             .header {
                 padding: 30px 20px;
             }
-            
+
             .header h1 {
                 font-size: 2.2em;
             }
-            
+
             .content {
                 padding: 25px;
             }
-            
+
             .app-details {
                 padding: 20px;
             }
-            
+
             .app-details td {
                 padding: 12px 15px;
                 font-size: 0.9em;
             }
-        }
-
-        .scroll-indicator {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, #4A90E2, #357ABD);
-            z-index: 1000;
-            transform: scaleX(0);
-            transform-origin: left;
-            animation: scrollProgress 0.1s ease-out;
-        }
-
-        @keyframes scrollProgress {
-            from { transform: scaleX(0); }
-            to { transform: scaleX(1); }
         }
     </style>
 </head>
@@ -290,7 +279,7 @@
             <div class="effective-date">
                 <strong>Effective Date:</strong> January 2, 2025
             </div>
-            
+
             <div class="intro">
                 <p>This Privacy Policy describes how Neon Innovation Lab ("we", "us", or "our") collects, uses, and protects information when you use the AstroTrack mobile application (the "App"). We are committed to protecting your privacy and handling your data in an open and transparent manner.</p>
             </div>
@@ -314,95 +303,171 @@
                         <td>Contact Email:</td>
                         <td>dev.ansari.mohiuddin@gmail.com</td>
                     </tr>
+                    <tr>
+                        <td>App Type:</td>
+                        <td>Free with Advertisements</td>
+                    </tr>
                 </table>
+            </div>
+
+            <div class="important-notice">
+                <h3>🆓 Free App with Ads</h3>
+                <p><strong>AstroTrack is completely FREE!</strong> All premium features are available to everyone at no cost. We support the app through non-intrusive advertisements to keep it free for all space enthusiasts.</p>
             </div>
 
             <h2>1. Information We Collect</h2>
             <p>AstroTrack collects and processes the following categories of information to provide and improve our services:</p>
 
-            <h3>Location Data</h3>
-            <p>The App requires access to your device's location services to provide satellite tracking functionality. This includes GPS coordinates and other location-related data necessary for calculating satellite passes, ISS tracking, and astronomical observations.</p>
+            <div class="highlight-box">
+                <h3>🌍 Location Data - Why We Need It</h3>
+                <p>AstroTrack requires your location to provide accurate astronomical calculations:</p>
+                <ul>
+                    <li><strong>Satellite Pass Predictions:</strong> Calculate when satellites like the ISS will be visible from your exact location</li>
+                    <li><strong>Sky Positioning:</strong> Show you exactly where to look in the sky for satellites and space objects</li>
+                    <li><strong>Local Space Events:</strong> Notify you of space events visible from your area</li>
+                    <li><strong>Accurate Timing:</strong> Provide precise rise and set times for astronomical objects</li>
+                </ul>
+                <p><strong>We DO NOT:</strong> Share your location with third parties, use it for advertising, or store it permanently.</p>
+            </div>
 
             <h3>Device Information</h3>
-            <p>We collect basic device information including device model, operating system version, unique device identifiers, and mobile network information to ensure the App functions properly on your device.</p>
+            <p>We collect basic device information including device model, operating system version, unique device identifiers, and mobile network information to ensure the App functions properly on your device and for ad serving.</p>
 
-            <h3>Usage Data</h3>
-            <p>We collect information about how you interact with the App, including features used, time spent in the App, space events viewed, satellite tracking sessions, and technical error logs to improve user experience and app performance.</p>
+            <h3>Usage Data and Analytics</h3>
+            <p>We collect information about how you interact with the App through Firebase Analytics, including:</p>
+            <ul>
+                <li>Features used and screens viewed</li>
+                <li>Time spent in the App</li>
+                <li>Space events viewed and satellite tracking sessions</li>
+                <li>Technical error logs and crash reports</li>
+                <li>App performance metrics</li>
+            </ul>
+
+            <h3>Advertising Data</h3>
+            <p>To support our free app model, we use Google AdMob and Start.io for advertisements. These services may collect:</p>
+            <ul>
+                <li>Device advertising identifiers</li>
+                <li>IP address and general location (for ad targeting)</li>
+                <li>Ad interaction data (clicks, views)</li>
+                <li>Device characteristics for ad optimization</li>
+            </ul>
 
             <h2>2. How We Use Your Information</h2>
             <p>The information collected is used for the following purposes:</p>
             <ul>
-                <li><strong>Service Delivery:</strong> To provide satellite tracking, space event monitoring, and astronomical data services</li>
-                <li><strong>App Improvement:</strong> To analyze usage patterns, identify bugs, and improve the App's performance, features, and user experience</li>
-                <li><strong>Technical Support:</strong> To diagnose technical issues and provide customer support when needed</li>
-                <li><strong>App Functionality:</strong> To ensure the App operates correctly across different devices and Android versions</li>
-                <li><strong>Space Data Integration:</strong> To fetch and display real-time data from NASA, SpaceX, and other space agencies</li>
+                <li><strong>Core Functionality:</strong> Satellite tracking, space event monitoring, and astronomical calculations</li>
+                <li><strong>Location Services:</strong> Provide accurate satellite pass predictions and sky positioning specific to your location</li>
+                <li><strong>App Improvement:</strong> Analyze usage patterns, identify bugs, and improve performance</li>
+                <li><strong>Ad Support:</strong> Display relevant advertisements to keep the app free</li>
+                <li><strong>Space Data Integration:</strong> Fetch real-time data from NASA, SpaceX, and other space agencies</li>
+                <li><strong>Technical Support:</strong> Diagnose issues and provide customer support</li>
             </ul>
 
             <h2>3. Data Sharing and Disclosure</h2>
             <p>We respect your privacy and do not sell, rent, or trade your personal information to third parties for their marketing purposes. We may share information only in the following circumstances:</p>
+
+            <h3>Third-Party Service Providers</h3>
             <ul>
-                <li><strong>Service Providers:</strong> With third-party service providers who assist us in operating the App (such as Firebase, Google Analytics), subject to confidentiality agreements</li>
-                <li><strong>Space Data APIs:</strong> We send API requests to NASA, SpaceX, N2YO, and other space agencies to fetch astronomical data (no personal information is shared)</li>
-                <li><strong>Legal Requirements:</strong> When required by law, legal process, or government request</li>
-                <li><strong>Protection of Rights:</strong> To protect our rights, property, or safety, or that of our users or others</li>
-                <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets, where user information may be transferred</li>
+                <li><strong>Google Firebase:</strong> For app analytics, crash reporting, and performance monitoring</li>
+                <li><strong>Google AdMob:</strong> For displaying advertisements (subject to Google's privacy policies)</li>
+                <li><strong>Start.io:</strong> For additional advertisement services</li>
             </ul>
-
-            <h2>4. Third-Party Services</h2>
-            <p>AstroTrack integrates the following third-party services that may collect and process data:</p>
-
-            <h3>Firebase (Google)</h3>
-            <p>The App uses Firebase for authentication, analytics, cloud storage, and push notifications. Firebase may collect and use data including device identifiers, IP address, and usage information in accordance with Google's Privacy Policy.</p>
 
             <h3>Space Data APIs</h3>
-            <p>The App fetches data from NASA APIs, SpaceX APIs, N2YO.com, and European Space Agency APIs. These services may collect basic request information but do not receive personal user data.</p>
+            <p>We fetch data from NASA, SpaceX, N2YO, ESA, JAXA, and ISRO APIs. These requests do not include your personal information - only technical API calls for space data.</p>
 
-            <p><strong>Important:</strong> For detailed information about how Google collects and processes data, please review the Google Privacy Policy and How Google uses information from sites or apps that use our services.</p>
+            <h3>Legal Requirements</h3>
+            <p>We may disclose information when required by law, legal process, or government request, or to protect our rights, property, safety, or that of our users.</p>
 
-            <h2>5. Data Security</h2>
-            <p>We implement appropriate technical and organizational security measures to protect your information against unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
+            <h2>4. Third-Party Services</h2>
+            <p>AstroTrack integrates several third-party services:</p>
+
+            <h3>Google Services (Firebase & AdMob)</h3>
+            <p>We use Google Firebase for analytics, crash reporting, and cloud services, and Google AdMob for advertisements. Google may collect and use data including device identifiers, IP address, and usage information in accordance with Google's Privacy Policy.</p>
+
+            <h3>Start.io Advertising</h3>
+            <p>Start.io provides additional advertising services and may collect device and usage data for ad targeting and optimization.</p>
+
+            <h3>Space Data Sources</h3>
+            <p>We integrate with legitimate space agencies and organizations:</p>
             <ul>
-                <li>Encryption of data in transit and at rest where applicable</li>
+                <li><strong>NASA:</strong> Astronomy Picture of the Day, Mars rover images, space weather data</li>
+                <li><strong>SpaceX:</strong> Launch information and mission data</li>
+                <li><strong>N2YO.com:</strong> Real-time satellite tracking data</li>
+                <li><strong>ESA, JAXA, ISRO:</strong> Additional space mission data</li>
+            </ul>
+
+            <p><strong>Important:</strong> For detailed information about Google's data practices, please review the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</p>
+
+            <h2>5. Location Permission Disclosure</h2>
+            <div class="highlight-box">
+                <h3>📍 Why AstroTrack Needs Location Access</h3>
+                <p>When you first use satellite tracking features, AstroTrack will request location permission. Here's exactly why:</p>
+                <ul>
+                    <li><strong>Satellite Visibility:</strong> To calculate which satellites are visible from your specific location</li>
+                    <li><strong>ISS Tracking:</strong> To predict when the International Space Station will pass over your area</li>
+                    <li><strong>Sky Mapping:</strong> To show accurate star maps and constellation positions for your location</li>
+                    <li><strong>Event Notifications:</strong> To alert you about space events visible from your area</li>
+                </ul>
+                <p><strong>You can:</strong> Deny location access and still use most app features, though satellite tracking will be limited to general predictions.</p>
+            </div>
+
+            <h2>6. Data Security</h2>
+            <p>We implement appropriate security measures to protect your information:</p>
+            <ul>
+                <li>Secure data transmission using HTTPS/TLS encryption</li>
+                <li>Firebase security rules and authentication</li>
                 <li>Regular security assessments and updates</li>
                 <li>Access controls and authentication mechanisms</li>
-                <li>Secure data storage practices</li>
-                <li>Firebase security rules and authentication</li>
+                <li>Minimal data retention policies</li>
             </ul>
-            <p>However, please note that no method of electronic transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
+            <p>However, no method of electronic transmission or storage is 100% secure, and we cannot guarantee absolute security.</p>
 
-            <h2>6. Data Retention</h2>
-            <p>We retain your information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law. When data is no longer needed, we will securely delete or anonymize it.</p>
-
-            <h2>7. Your Rights and Choices</h2>
-            <p>Depending on your location, you may have the following rights regarding your personal information:</p>
+            <h2>7. Data Retention</h2>
+            <p>We retain your information only as long as necessary:</p>
             <ul>
-                <li><strong>Access:</strong> Request access to the personal information we hold about you</li>
-                <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
-                <li><strong>Deletion:</strong> Request deletion of your personal information</li>
-                <li><strong>Data Portability:</strong> Request a copy of your data in a structured, machine-readable format</li>
-                <li><strong>Location Control:</strong> Disable location services through device settings</li>
-                <li><strong>Withdrawal of Consent:</strong> Withdraw consent where processing is based on consent</li>
+                <li><strong>Location Data:</strong> Used temporarily for calculations, not stored permanently</li>
+                <li><strong>Usage Analytics:</strong> Aggregated and anonymized after 26 months (Google Analytics standard)</li>
+                <li><strong>Crash Reports:</strong> Retained for up to 90 days for debugging purposes</li>
+                <li><strong>Ad Data:</strong> Managed by advertising partners according to their retention policies</li>
             </ul>
-            <p>To exercise these rights, please contact us using the information provided in the Contact Us section below.</p>
 
-            <h2>8. Children's Privacy</h2>
-            <p>AstroTrack is not intended for use by children under the age of 13 (or the applicable age of consent in your jurisdiction). We do not knowingly collect personal information from children. If we become aware that we have collected information from a child without parental consent, we will take steps to delete such information promptly.</p>
+            <h2>8. Your Rights and Choices</h2>
+            <p>You have the following rights regarding your personal information:</p>
+            <ul>
+                <li><strong>Location Control:</strong> Enable/disable location services in device settings</li>
+                <li><strong>Ad Preferences:</strong> Opt out of personalized ads through device settings</li>
+                <li><strong>Data Access:</strong> Request access to data we hold about you</li>
+                <li><strong>Data Deletion:</strong> Request deletion of your personal information</li>
+                <li><strong>App Uninstall:</strong> Completely remove the app and associated data</li>
+            </ul>
 
-            <h2>9. International Data Transfers</h2>
-            <p>Your information may be transferred to and processed in countries other than your country of residence. These countries may have data protection laws that differ from those in your country. We ensure appropriate safeguards are in place to protect your information in accordance with this Privacy Policy.</p>
+            <h2>9. Children's Privacy</h2>
+            <p>AstroTrack is suitable for educational use by children under parental guidance. We do not knowingly collect personal information from children under 13 without parental consent. If we become aware of such collection, we will take steps to delete the information promptly.</p>
 
-            <h2>10. Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. When we make changes, we will:</p>
+            <h2>10. Advertising and Monetization</h2>
+            <p>AstroTrack is free and supported by advertisements:</p>
+            <ul>
+                <li>We display ads from Google AdMob and Start.io</li>
+                <li>Ads help us keep the app completely free for users</li>
+                <li>We do not sell user data to advertisers</li>
+                <li>Advertising partners may use device identifiers for ad targeting</li>
+                <li>You can limit ad tracking in your device settings</li>
+            </ul>
+
+            <h2>11. International Data Transfers</h2>
+            <p>Your information may be transferred to and processed in countries other than your country of residence, including the United States where Google and other service providers operate. We ensure appropriate safeguards are in place to protect your information.</p>
+
+            <h2>12. Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. When we make changes, we will:</p>
             <ul>
                 <li>Update the "Effective Date" at the top of this policy</li>
-                <li>Notify you through the App or by other means if required by law</li>
-                <li>Obtain your consent if required for material changes</li>
+                <li>Notify users through the app if material changes are made</li>
+                <li>Obtain consent if required for significant changes</li>
             </ul>
-            <p>We encourage you to review this Privacy Policy periodically to stay informed about how we protect your information.</p>
 
             <div class="contact-info">
-                <h2>11. Contact Us</h2>
+                <h2>13. Contact Us</h2>
                 <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
                 <p><strong>Neon Innovation Lab</strong><br>
                 Email: dev.ansari.mohiuddin@gmail.com<br>
@@ -410,12 +475,13 @@
                 <p>We will respond to your inquiry within a reasonable timeframe, typically within 30 days.</p>
             </div>
 
-            <h2>12. Governing Law</h2>
-            <p>This Privacy Policy shall be governed by and construed in accordance with applicable data protection laws and regulations, including but not limited to GDPR (General Data Protection Regulation) where applicable.</p>
+            <h2>14. Governing Law</h2>
+            <p>This Privacy Policy shall be governed by and construed in accordance with applicable data protection laws and regulations, including GDPR where applicable, and the laws of the jurisdiction where Neon Innovation Lab operates.</p>
 
             <div class="footer">
                 <p>© 2025 Neon Innovation Lab. All rights reserved.</p>
                 <p>This Privacy Policy was last updated on January 2, 2025</p>
+                <p>🚀 AstroTrack - Explore the cosmos, completely free! 🌌</p>
             </div>
         </div>
     </div>
